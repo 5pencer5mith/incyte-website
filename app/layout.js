@@ -2,9 +2,9 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 
 const roboto = Roboto({
-    subsets: ["latin"],
-    weight: ["100", "400", "700"],
-  });
+  subsets: ["latin"],
+  weight: ["100", "400", "700"],
+});
 
 export const metadata = {
   title: "Sperm In-Cyte",
@@ -14,9 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className}`}>
-        {children}
-      </body>
+      <body className={`${roboto.className}`}>{children}</body>
     </html>
   );
 }
