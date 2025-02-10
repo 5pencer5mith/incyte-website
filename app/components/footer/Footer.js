@@ -9,7 +9,7 @@ import { logoFacebook, logoYoutube, logoInstagram } from "ionicons/icons";
 import Link from "next/link";
 
 // Styles
-import styles from "@/app/components/footer/footer.module.css";
+import styles from "./footer.module.css";
 
 export default function Footer() {
   const [isHydrated, setIsHydrated] = useState(false);

@@ -71,6 +71,34 @@ p {
   color: black;
 }
 
+.layoutWrapper {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.backgroundWrap {
+  margin: 50px;
+  background-color: #fff;
+  padding: 40px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.constructionWrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.feedback {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 30px;
@@ -82,5 +110,18 @@ p {
 
   p {
     font-size: 14px;
+  }
+
+  .backgroundWrap {
+    margin: 15px 5px;
+    display: block;
+  }
+
+  .sidekick {
+    padding-top: 50px;
+  }
+
+  .constructionWrapper {
+    text-align: center;
   }
 }

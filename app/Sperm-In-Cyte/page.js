@@ -4,7 +4,7 @@
 import { useState, useEffect } from "react";
 
 // Components
-import ProductHero from "@/app/components/hero/productHero/ProductHero";
+import ProductHero from "../components/hero/productHero/ProductHero";
 import { IonIcon } from "@ionic/react";
 import {
   searchOutline,
@@ -17,7 +17,7 @@ import {
 } from "ionicons/icons";
 
 // Styles
-import styles from "@/app/Sperm-In-Cyte/page.module.css";
+import styles from "./page.module.css";
 
 export default function SpermIncyte() {
   const [isHydrated, setIsHydrated] = useState(false); // This is a state variable that is used to determine if the page has been hydrated or not.

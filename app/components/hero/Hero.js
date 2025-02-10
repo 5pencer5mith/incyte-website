@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 // Styles
-import styles from "@/app/components/hero/hero.module.css";
+import styles from "./hero.module.css";
 
 export default function Hero() {
   return (

@@ -4,7 +4,7 @@
 import { useState, useEffect } from "react";
 
 // Components
-import Hero from "@/app/components/hero/Hero";
+import Hero from "./components/hero/Hero";
 import { IonIcon } from "@ionic/react";
 import {
   warningOutline,
@@ -15,9 +15,10 @@ import {
   locationOutline,
   hardwareChipOutline,
 } from "ionicons/icons";
-import Button from "@/app/components/buttons/Button";
-import ButtonGroup from "@/app/components/buttons/ButtonGroup";
+import Button from "./components/buttons/Button";
+import ButtonGroup from "./components/buttons/ButtonGroup";
 import Image from "next/image";
+
 // Styles
 import styles from "./page.module.css";
 
