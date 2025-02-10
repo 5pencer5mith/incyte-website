@@ -20,7 +20,7 @@ const links = [
   { name: "Store", href: "/Store" },
 ];
 
-const Header = () => {
+export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isHydrated, setIsHydrated] = useState(false);
 
@@ -67,5 +67,3 @@ const Header = () => {
     </div>
   );
 };
-
-export default Header;

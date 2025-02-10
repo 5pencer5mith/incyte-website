@@ -11,7 +11,7 @@ import Link from "next/link";
 // Styles
 import styles from "@/app/components/footer/footer.module.css";
 
-const Footer = () => {
+export default function Footer() {
   const [isHydrated, setIsHydrated] = useState(false);
 
   useEffect(() => {
@@ -60,5 +60,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;
