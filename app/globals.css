@@ -99,6 +99,22 @@ p {
   text-align: center;
 }
 
+.abContentWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.subNav {
+  flex: 1;
+  padding: 20px;
+}
+
+.ab-content {
+  flex: 3;
+  padding-left: 25px;
+}
+
+
 @media (max-width: 768px) {
   h1 {
     font-size: 30px;
@@ -124,4 +140,13 @@ p {
   .constructionWrapper {
     text-align: center;
   }
+
+  .abContentWrapper {
+    display: block;
+  }
+
+  .ab-content {
+    padding-left: 0;
+  }
+
 }
