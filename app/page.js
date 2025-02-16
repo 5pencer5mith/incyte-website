@@ -17,9 +17,9 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <div className={styles.messageContainer}>
-        <h1>The Sperm In-Cyte Website: Coming Soon!</h1>
+        <h1>The Bull Insight Website: Coming Soon!</h1>
         <p>
-          The Sperm In-Cyte Website is currently under construction. Check back
+          The Bull Insight Website is currently under construction. Check back
           soon for more details and content.
         </p>
         <IonIcon className={styles.gear} icon={cogOutline} />
