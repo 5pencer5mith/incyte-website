@@ -23,7 +23,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerLogo}>
-        <Link href="/">Sperm In-Cyte</Link>
+        <Link href="/">Bull Insight</Link>
       </div>
 
       <div className={styles.footerNav}>

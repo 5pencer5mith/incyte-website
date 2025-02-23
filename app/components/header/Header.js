@@ -40,7 +40,7 @@ export default function Header() {
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
-        <Link href="/">Sperm In-Cyte</Link>
+        <Link href="/">Bull Insight</Link>
       </div>
 
       <div className={styles.hamburger} onClick={toggleMenu}>

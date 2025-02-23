@@ -2,6 +2,7 @@
 
 // Hooks and Utility
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 // Components
 import Hero from "./components/hero/Hero";
@@ -24,10 +25,15 @@ import styles from "./page.module.css";
 
 export default function Home() {
   const [isHydrated, setIsHydrated] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     setIsHydrated(true);
-  }, []);
+    const hash = window.location.hash;
+    if (hash) {
+      router.push(hash);
+    }
+  }, [router]);
   if (!isHydrated) return null;
 
   return (
