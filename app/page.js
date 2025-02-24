@@ -42,6 +42,36 @@ export default function Home() {
       <div className="content">
         <div className={styles.contentWrapper}>
           <div className={styles.intro}>
+            <div className={styles.introTitle}>
+              <h1>Herd Health Comes First</h1>
+            </div>
+
+            <div className={styles.colorBox}>
+              <h3>
+                <span>Our goal</span> is to provide effective resources and
+                information, and to promote best practices that ensure the
+                well-being and health of cattle herds worldwide.
+              </h3>
+            </div>
+
+            <div className={styles.introCols}>
+              <div className={styles.introCol1}>
+              <Image
+                    src="/img/index/cow-lick.jpg"
+                    alt="Cow licking its nose"
+                    className={styles.img}
+                    width={700}
+                    height={400}
+                    style={{ borderRadius: "5px" }}
+                  />
+              </div>
+
+              <div className={styles.introCol2}>
+                <h1>Fertility Health</h1>
+              </div>
+            </div>
+          </div>
+          <div className={styles.incyte}>
             <div className={styles.title}>
               <h1>
                 Harness The Power of Artificial Intelligence <span>(AI)</span>{" "}
@@ -55,9 +85,9 @@ export default function Home() {
             </div>
 
             <div className={styles.colorBox}>
-              <div className={styles.introCols}>
+              <div className={styles.incyteCols}>
                 <div>
-                  <div className={styles.introExplain}>
+                  <div className={styles.incyteExplain}>
                     <h2>What Is Sperm In-Cyte?</h2>
                     <p>
                       Using advanced computer vision and machine learning
@@ -77,7 +107,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className={styles.introImg}>
+                <div className={styles.incyteImg}>
                   <Image
                     src="/img/index/cow-lick.jpg"
                     alt="Cow licking its nose"

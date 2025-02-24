@@ -9,8 +9,7 @@ export default function Hero() {
     <div className={styles.hero}>
       <div className={styles.overlay}>
         <div className={styles.content}>
-          <h1>Sperm In-Cyte</h1>
-          <h6>Revolutionize Cattle Breeding</h6>
+          <h1>Your Home for a Healthy Herd</h1>
         </div>
       </div>
       <div className={styles.bgImage}>
