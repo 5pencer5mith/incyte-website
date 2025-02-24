@@ -29,6 +29,7 @@
 .intro,
 .incyte,
 .aboutUs,
+.donate,
 .contactUs {
   justify-content: space-between;
   align-items: center;
@@ -52,7 +53,6 @@
 
 .introCols {
   display: flex;
-  justify-content: center;
 }
 
 .introCol1, .introCol2 {
@@ -60,7 +60,18 @@
 }
 
 .introCol2 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
+.introCol2Title {
+  display: flex;
   justify-content: center;
+}
+
+.introContent {
+  text-align: left;
 }
 
 .incyte .title {
@@ -83,11 +94,14 @@
 }
 
 .colorBox {
-  margin-bottom: 50px;
   background-color: #f0f8ff;
   padding: 50px 50px;
   border-radius: 5px;
   box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.1);
+}
+
+.intro .colorBox {
+  margin-bottom: 50px;
 }
 
 .title {
@@ -120,6 +134,10 @@
   margin-bottom: 10px;
 }
 
+.aboutUs h2 {
+  font-weight: lighter;
+}
+
 .col1 {
   margin-right: 10px;
 }
@@ -133,6 +151,19 @@
   flex: 2;
   align-items: center;
   justify-content: center;
+}
+
+.donate span {
+  font-weight: lighter;
+}
+
+.donate p {
+  margin-bottom: 25px;
+}
+
+.donate h2 {
+  font-weight: lighter;
+  text-align: center;
 }
 
 .contactUs {
@@ -197,17 +228,27 @@
 
   .contentWrapper p {
     font-size: 14px;
+    line-height: 1.6rem;
   }
 
   .intro,
   .incyte,
   .aboutUs,
+  .donate,
   .contactUs {
     margin-bottom: 15px;
   }
 
   .title h1 {
     padding-left: 0;
+  }
+
+  .introCol1 {
+    display: none;
+  }
+
+  .introCols {
+    display: block;
   }
 
   .cols {

@@ -56,26 +56,55 @@ export default function Home() {
 
             <div className={styles.introCols}>
               <div className={styles.introCol1}>
-              <Image
-                    src="/img/index/cow-lick.jpg"
-                    alt="Cow licking its nose"
-                    className={styles.img}
-                    width={700}
-                    height={400}
-                    style={{ borderRadius: "5px" }}
-                  />
+                <Image
+                  src="/img/index/cow-lick.jpg"
+                  alt="Cow licking its nose"
+                  className={styles.img}
+                  width={700}
+                  height={400}
+                  style={{ borderRadius: "5px" }}
+                />
               </div>
 
               <div className={styles.introCol2}>
-                <h1>Fertility Health</h1>
+                <div className={styles.introCol2Title}>
+                  <h1>Fertility Health</h1>
+                  <IonIcon
+                    className={styles.icons}
+                    icon={heartOutline}
+                    style={{ verticalAlign: "middle" }}
+                  />
+                </div>
+
+                <div className={styles.introContent}>
+                  <p>
+                    Healthy Bull Fertility in cattle breeding impacts
+                    agricultural efficiency, economic viability, and
+                    environmental sustainability. This means an improved
+                    livestock productivity and cost savings for cattle
+                    producers, genetic improvements and increased and prolonged
+                    health for cattle, and more. To help ensure healthy bull
+                    fertility, licensed veterinarians will examine the semen of
+                    the bull and look at things like sperm concentration,
+                    motility, and morphology as part of what is called a B.B.S.E
+                    or Bull Breeding Soundness Exam.
+                  </p>
+
+                  <ButtonGroup
+                    button1Dest="/Resources"
+                    button1Text="Learn More About B.B.S.E."
+                    button2Dest="/Morphology"
+                    button2Text="Learn More About Morphology"
+                  />
+                </div>
               </div>
             </div>
           </div>
           <div className={styles.incyte}>
             <div className={styles.title}>
               <h1>
-                Harness The Power of Artificial Intelligence <span>(AI)</span>{" "}
-                in Bull Fertility Analysis
+                Harness the Power of Artificial Intelligence <span>(AI)</span>{" "}
+                with Sperm In-Cyte
               </h1>
               <IonIcon
                 className={styles.icons}
@@ -132,8 +161,29 @@ export default function Home() {
             <div className={styles.colorBox}>
               <div className={styles.cols}>
                 <div className={styles.col1}>
-                  <h2>We Are Sperm In-Cyte</h2>
+                  <h2>We Are Bull Insight</h2>
                   <p>
+                    Bull Insight is transforming cattle breeding through
+                    advanced technology, education, and research.{" "}
+                    <strong>Our mission</strong> is to enhance herd fertility by
+                    providing accurate reproductive insights, practical
+                    knowledge, and advanced tools that harness the power of
+                    artificial intelligence.
+                  </p>
+                  <p>
+                    Developed by Dr. Glen Jensen, Sperm In-Cyte uses
+                    cutting-edge computer vision to deliver precise semen
+                    evaluations, surpassing manual methods. Beyond technology,
+                    we provide essential expertise on bull breeding soundness
+                    evaluations (BBSE), sperm morphology, and reproductive
+                    health.
+                  </p>
+                  <p>
+                    By bridging science and industry, Bull Insight empowers
+                    cattle producers with the tools to make informed breeding
+                    decisions and drive long-term success.
+                  </p>
+                  {/* <p>
                     Founded by Dr. Glen Jensen, Sperm In-Cyte is an innovative
                     veterinary technology designed for enhancing cattle herd
                     reproductive efficiency through advanced semen analysis.
@@ -148,7 +198,7 @@ export default function Home() {
                     algorithms to guarantee precise and consistent results,
                     empowering cattle producers to make informed breeding
                     decisions.
-                  </p>
+                  </p> */}
                 </div>
 
                 <div className={styles.col2}>
@@ -164,7 +214,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className={styles.summ}>
+            {/* <div className={styles.summ}>
               <div>
                 <div className={styles.title}>
                   <IonIcon
@@ -245,6 +295,29 @@ export default function Home() {
                   buttonText="Learn More About Sperm In-Cyte"
                 />
               </div>
+            </div> */}
+          </div>
+
+          <div className={styles.donate}>
+            <div className={styles.colorBox}>
+              <h1>
+                Support the Cause<span> - Keep Our Herds Healthy</span>
+              </h1>
+              <p>
+                Bull Insight is dedicated to advancing cattle breeding through
+                technology, research, and education. Your support helps us
+                continue providing valuable insights and resources to producers
+                everywhere.
+              </p>
+              <h2>
+                Join us in promoting healthier, more productive herds. Every
+                contribution keeps this initiative going.
+              </h2>
+
+              <Button
+                buttonDest="/"
+                buttonText="Donate Now"
+              />
             </div>
           </div>
 
